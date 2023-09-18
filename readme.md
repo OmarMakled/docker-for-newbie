@@ -9,3 +9,9 @@ Create a docker container for PHP demos ONLY
 docker-compose exec db /bin/sh
 mysql -u root -p secret
 ```
+
+### PHP
+```
+docker-compose exec php composer install
+docker-compose exec php composer ./vendor/bin/phpunit tests
+```
